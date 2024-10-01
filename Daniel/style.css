@@ -1,0 +1,234 @@
+body{ 
+    font-family: "Montserrat", sans-serif;
+
+}
+
+body p { 
+    color: #748182;
+}
+
+.Border-Radius{ 
+    border-radius: 50%;
+    padding: 0.7rem;
+}
+
+
+header{ 
+    background-image:
+   linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+     url(./imgs/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+}
+
+.buton{ 
+    padding: 10px 30px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.buton-bg{ 
+    background: #1c1c1c;
+    color: #eee;
+}
+
+.cv:hover{ 
+    background: #fff;
+    color: #1c1c1c;
+
+}
+
+.call:hover{ 
+    background:  #1c1c1c;
+    color:#fff ;
+}
+
+.services .container .card i , .contact .container i{ 
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    font-size: 2rem;
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+
+}
+
+.services .container .card i:hover ,.contact .container .item i:hover{ 
+    background:  #1c1c1c;
+    color:#fff ;
+}
+
+.services .container .card { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   box-shadow : 0px 10px 30px -8px rgba(0, 0, 0, 0.1)
+}
+.services, .testimonials ,.our-team{ 
+background-color: #f7f7f7;
+}
+
+.portfolio .container  ul li a { 
+    color: #222;
+    font-weight: 700;
+}
+
+.portfolio .container .item{ 
+    overflow: hidden;
+}
+.portfolio .container .item .overlay{ 
+    
+    border: 2px solid gray;
+    opacity: 0;
+    transition: 0.5s ease-in;
+
+}
+
+.portfolio .container .item:hover .overlay{ 
+
+    opacity: 1;
+}
+
+.testimonials .card-silder img{ 
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem ;
+}
+
+#carouselExampleIndicators .carousel-indicators button{ 
+  
+   width: 10px ;
+   height: 10px;
+   border-radius: 50%;
+}
+
+.our-team .card , .our-team .card .card-img-top
+,.our-team .card .img
+{ 
+    overflow: hidden;
+    transition: 0.8s;
+}
+.our-team .card .over{ 
+    opacity: 0;
+ 
+}
+.our-team .card .over , .our-team .card .over ul{ 
+    transition:  0.5s; 
+}
+.our-team .card:hover  .over{ 
+    opacity: 1;
+    
+}
+.our-team .card:hover .over ul{ 
+    transform: rotateY(360deg);
+}
+.our-team .card:hover  .card-img-top{ 
+            scale: 1.2;
+}
+
+.contact .container .item:hover i { 
+   
+    background:  #1c1c1c;
+    color:#fff ;
+   
+
+}
+
+.contact form div input ,.contact textarea { 
+    background-color: #f4f4f4;
+}
+
+
+.header-content .animated-text { 
+    overflow: hidden;
+    text-wrap: nowrap;
+    min-width: 280px ;
+}
+
+
+.animated-text span{ 
+    position: relative;
+    
+}
+
+.animated-text span:before{ 
+    content: "Larry Daniels";
+    animation: words 20s infinite;
+    
+}
+
+.animated-text span:after{ 
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    right: -8px;
+    border-left: 3px solid #fff;
+    animation: cursor-animation 0.6s infinite , 
+    typing 20s steps(14) infinite;
+}
+
+
+
+@keyframes cursor-animation {
+    to{
+        border-left: 2px solid #fff;
+    }
+    
+}
+
+@keyframes words {
+
+    0%,
+    30%{
+        content: " Larry Daniels";
+        
+    }
+
+    31%,
+    70%{
+        content: " Designer";
+    }
+    71%,
+    100%{
+        content: " Developer";
+    }
+ 
+  
+}
+
+
+@keyframes typing{ 
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95%
+    { 
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    80%,
+    85%
+    {
+        width: calc(100% + 8px);
+    }
+} 
+ 

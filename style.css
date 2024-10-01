@@ -1,0 +1,251 @@
+body{ 
+    font-family: "Montserrat", sans-serif;
+
+}
+
+body p { 
+    color: #748182;
+}
+
+.Border-Radius{ 
+    border-radius: 50%;
+    padding: 0.7rem;
+}
+
+
+header{ 
+    background-color:#000;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+}
+
+.buton{ 
+    padding: 10px 30px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.buton-bg{ 
+    background: #1c1c1c;
+    color: #eee;
+}
+
+.cv:hover{ 
+    background: #fff;
+    color: #1c1c1c;
+
+}
+
+.call:hover{ 
+    background:  #1c1c1c;
+    color:#fff ;
+}
+
+.services .container .card i , .contact .container i{ 
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    font-size: 2rem;
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+
+}
+
+.services .container .card i:hover ,.contact .container .item i:hover{ 
+    background:  #1c1c1c;
+    color:#fff ;
+}
+
+.services .container .card { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   box-shadow : 0px 10px 30px -8px rgba(0, 0, 0, 0.1)
+}
+.services, .testimonials ,.our-team{ 
+background-color: #f7f7f7;
+}
+
+.portfolio .container  ul li a { 
+    color: #222;
+    font-weight: 700;
+}
+
+.portfolio .container .item{ 
+    overflow: hidden;
+}
+.portfolio .container .item .overlay{ 
+    
+    border: 2px solid gray;
+    opacity: 0;
+    transition: 0.5s ease-in;
+
+}
+
+.portfolio .container .item:hover .overlay{ 
+
+    opacity: 1;
+}
+
+.testimonials .card-silder img{ 
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem ;
+}
+
+#carouselExampleIndicators .carousel-indicators button{ 
+  
+   width: 10px ;
+   height: 10px;
+   border-radius: 50%;
+}
+
+.our-team .card , .our-team .card .card-img-top
+,.our-team .card .img
+{ 
+    overflow: hidden;
+    transition: 0.8s;
+}
+.our-team .card .over{ 
+    opacity: 0;
+ 
+}
+.our-team .card .over , .our-team .card .over ul{ 
+    transition:  0.5s; 
+}
+.our-team .card:hover  .over{ 
+    opacity: 1;
+    
+}
+.our-team .card:hover .over ul{ 
+    transform: rotateY(360deg);
+}
+.our-team .card:hover  .card-img-top{ 
+            scale: 1.2;
+}
+
+.contact .container .item:hover i { 
+   
+    background:  #1c1c1c;
+    color:#fff ;
+   
+
+}
+
+.contact form div input , .contact textarea { 
+    background-color: #f4f4f4;
+}
+
+.hay{
+    animation: hayred 1s infinite alternate;
+}
+.animated-text{
+    min-width: 280px;
+    background-color: #000;
+}
+.animated-text span{
+    position: relative;
+    display: inline-block;
+    
+   
+}
+
+/* Content */
+.animated-text span::before{ 
+    content: "Maged A.Arteen";
+    color: gold;
+    font-weight: bold;
+    animation: words 20s  infinite ;
+   /* display: inline-block; */
+   /* background-color: #000; */
+  
+   
+   
+
+}
+
+/* Cursor */
+.animated-text span::after{ 
+    content: "";
+    position: absolute;
+    border-left: 2px solid gold ;
+    background-color: #000;
+    width: calc(100% + 8px);
+    height: 100%;
+    
+    right: -8px;
+    animation: blink 0.5s infinite , variation 20s steps(14) infinite;
+
+    
+}
+
+
+ @keyframes words{ 
+    0%,15%{
+       content: "Maged A.Arteen";
+       color: red;
+    }
+    16%,20%{
+        content: "Frontend Developer";
+
+    }
+    21%,40%{
+        
+        content:" RW Designer";
+    }
+    41%,60%{
+        
+        content: "SEO Specialist";
+    }
+    61%,80%{
+        
+        content: "React Native Developer";
+    }
+    81%,100%{
+        content: "JavaScript Developer";
+    }
+   
+} 
+@keyframes blink{ 
+
+    to { 
+        border-left: 2px solid transparent;
+    }
+}
+
+
+
+@keyframes hayred{ 
+    from{ 
+        color: #fff;
+    }
+    to{
+        color: red;
+    }
+}
+
+@keyframes variation {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+       
+    }
+
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+        
+    }
+    
+}
+
+.social i { 
+    font-size: 24px;
+    color: gold;
+    font-weight: lighter;
+}
